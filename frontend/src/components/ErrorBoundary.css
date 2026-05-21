@@ -1,0 +1,52 @@
+.error-boundary-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.error-card {
+  background: white;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.1);
+  text-align: center;
+}
+
+.error-card h2 {
+  color: #e74c3c;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.error-message {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 16px 0;
+  padding: 12px;
+  background-color: #fef5f5;
+  border-left: 3px solid #e74c3c;
+}
+
+.btn-retry {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 16px;
+}
+
+.btn-retry:hover {
+  background-color: #2980b9;
+}

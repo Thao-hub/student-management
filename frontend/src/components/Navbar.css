@@ -1,0 +1,99 @@
+.navbar {
+  background: linear-gradient(135deg, #5665eb 0%, #4d81e7 100%);
+  color: white;
+  padding: 0;
+  box-shadow: 0 14px 30px rgba(62, 96, 184, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  max-width: 100%;
+}
+
+.navbar-brand h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  margin-left: 48px;
+}
+
+.nav-link {
+  color: rgba(247, 250, 255, 0.84);
+  font-weight: 600;
+  transition: color 0.3s, border-color 0.3s;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.82);
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-language-switcher {
+  align-self: center;
+  margin-bottom: 0;
+  background: rgba(232, 240, 255, 0.22);
+}
+
+.navbar-language-switcher .language-btn {
+  color: #eef4ff;
+}
+
+.navbar-language-switcher .language-btn.active {
+  color: #ffffff;
+}
+
+.user-info {
+  font-size: 14px;
+  color: rgba(241, 246, 255, 0.82);
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.24);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar-menu {
+    margin-left: 0;
+    gap: 12px;
+  }
+
+  .navbar-user {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
